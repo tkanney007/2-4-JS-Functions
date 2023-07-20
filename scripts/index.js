@@ -91,3 +91,30 @@ function pow(num, exponent) {
 
 pow(2, 3);
 pow(16, 20);
+
+//in class code challenge
+
+function isEqual(firstValue, secondValue) {
+  if (firstValue === secondValue) {
+    console.log(
+      `The values ${firstValue} and ${secondValue} are equal and of the same datatype.`
+    );
+  } else if (firstValue == secondValue) {
+    let dataTypeV1 = typeof firstValue;
+    let datatypeV2 = typeof secondValue;
+    console.log(
+      `The values ${firstValue} and ${secondValue} are equal, however the datatypes are not equal. ${firstValue} has a datatype of ${dataTypeV1} and ${secondValue} has a datatype of ${datatypeV2} and therefore are not strictly equal.`
+    );
+  } else {
+    console.log(
+      `Sorry the values of ${firstValue} and ${secondValue} are not equal`
+    );
+  }
+}
+
+isEqual(1, 1);
+isEqual(1, "1");
+isEqual(1, 2);
+isEqual("Tom", "Bob");
+isEqual("Tom", "Tom");
+isEqual("Tom", "TOM");

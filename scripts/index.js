@@ -11,7 +11,7 @@ fizzBuzz(120); //FizzBuzz
 fizzBuzz(9999); //Fizz
 */
 function fizzBuzz(num) {
-  if (num % 3 == 0 && num % 5) {
+  if (num % 3 == 0 && num % 5 == 0) {
     console.log("FizzBuzz");
   } else if (num % 3 == 0) {
     console.log("Fizz");
